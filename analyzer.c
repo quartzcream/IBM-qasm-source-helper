@@ -168,9 +168,9 @@ void init_avail_gates()
 		avail_gates[i].mat.mat = malloc(4*4 * sizeof(complex double));
 		complex double tmp[16] = {
 			1, 0, 0, 0,
+			0, 1, 0, 0,
 			0, 0, 0, 1,
-			0, 0, 1, 0,
-			0, 1, 0, 0
+			0, 0, 1, 0
 		};
 		memcpy(avail_gates[i].mat.mat, tmp, sizeof(tmp));
 		++i;
